@@ -21,3 +21,4 @@ resource "aws_s3_bucket" "test" {
 - terraform plan
 - terraform apply
 
+2. vpc / subnet / igw, nat gateway / route table
