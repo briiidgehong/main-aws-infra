@@ -13,17 +13,20 @@
   > virtual private network 즉, 데이터센터와 유사한 가상 사설망
 
 - CIDR란?
-<img width="854" alt="스크린샷 2022-10-18 오후 6 31 41" src="https://user-images.githubusercontent.com/73451727/196393554-63cf49e0-d895-4b79-aeb1-4325fc7b0f47.png">
-
   > 여러개의 사설망을 구축하기 위해 망을 나누는 방법 <br/>
   > Classless Inter Domain Routing <br/>
   > Classless vs Classful <br/>
   > 전통적으로 네트워크비트를 8/16/24로 클래스화시키는 classful 서브네팅을 더욱 유연하게 만듬 <br/>
   > 즉, 필요한만큼 가변적으로 네트워크 비트 세팅이 가능함 (22,23,25,26 등등) <br/>
+<img width="854" alt="스크린샷 2022-10-18 오후 6 31 41" src="https://user-images.githubusercontent.com/73451727/196393554-63cf49e0-d895-4b79-aeb1-4325fc7b0f47.png">
 
 - IPv4 CIDR BLOCK
   > VPC 내의 인스턴스 및 리소스에 할당되는 IP 주소를 결정 <br/>
-  > 10.0.0.0/8 , 172.16.0.0/12 , 192.168.0.0/16 <br/>
+  > 일반적으로 아래 3개중 하나를 설정한다.
+  > 10.0.0.0/8 [16777216-5(aws기준)의 갯수만큼 호스트를 가질수 있다.] <br/>
+  > 172.16.0.0/12 [104857-5(aws기준)의 갯수만큼 호스트를 가질수 있다.] <br/>
+  > 192.168.0.0/16 [65536-5(aws기준)의 갯수만큼 호스트를 가질수 있다.] <br/>
+<img width="643" alt="스크린샷 2022-10-18 오후 6 48 48" src="https://user-images.githubusercontent.com/73451727/196397418-86647ea3-603e-4451-a27d-614037e11ffa.png">
 
 ## SUBNET 
 - 퍼블릭, 프라이빗 서브넷으로 구성 <br/>
