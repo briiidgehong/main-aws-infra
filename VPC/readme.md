@@ -18,7 +18,8 @@
   > Classless vs Classful <br/>
   > 전통적으로 네트워크비트를 8/16/24로 클래스화시키는 classful 서브네팅을 더욱 유연하게 만듬 <br/>
   > 즉, 필요한만큼 가변적으로 네트워크 비트 세팅이 가능함 (22,23,25,26 등등) <br/>
-<img width="854" alt="스크린샷 2022-10-18 오후 6 31 41" src="https://user-images.githubusercontent.com/73451727/196393554-63cf49e0-d895-4b79-aeb1-4325fc7b0f47.png">
+<img width="854" alt="스크린샷 2022-10-18 오후<img width="650" alt="스크린샷 2022-10-19 오전 11 58 29" src="https://user-images.githubusercontent.com/73451727/196586907-8bf79b90-e3b7-4254-ae26-e3a3e47da0ed.png">
+ 6 31 41" src="https://user-images.githubusercontent.com/73451727/196393554-63cf49e0-d895-4b79-aeb1-4325fc7b0f47.png">
 
 - IPv4 CIDR BLOCK
   > VPC 내의 인스턴스 및 리소스에 할당되는 IP 주소를 결정 <br/>
@@ -28,9 +29,21 @@
   > 192.168.0.0/16 [65536-5(aws기준)의 갯수만큼 호스트를 가질수 있다.] <br/>
 <img width="643" alt="스크린샷 2022-10-18 오후 6 48 48" src="https://user-images.githubusercontent.com/73451727/196397418-86647ea3-603e-4451-a27d-614037e11ffa.png">
 
-## SUBNET 
-- 퍼블릭, 프라이빗 서브넷으로 구성 <br/>
-- 서브넷은 라우트 테이블에 연결되어있는 구조 <br/>
-- 라우트 테이블 구성시에 0.0.0.0/0 즉, 외부로 나가는 트래픽이 IGW이면 퍼블릭 서브넷 NAT이면 프라이빗 서브넷이다. <br/>
+## VPC 구성
+#### 1. VPC 생성
+<img width="650" alt="스크린샷 2022-10-19 오전 11 58 29" src="https://user-images.githubusercontent.com/73451727/196586925-bb3517cd-8d0a-4115-8bd7-29779ee9bf0e.png">
+
+#### 2. 서브넷 생성 (public / private)
+<img width="664" alt="스크린샷 2022-10-19 오후 12 00 10" src="https://user-images.githubusercontent.com/73451727/196587227-ce2fa515-2d93-4d1f-adef-0da739430583.png">
+<img width="648" alt="스크린샷 2022-10-19 오후 12 00 49" src="https://user-images.githubusercontent.com/73451727/196587237-80effd2d-b5fa-4e88-a56b-b72a2533300a.png">
+
+#### 3. IGW 생성
+<img width="670" alt="스크린샷 2022-10-19 오후 12 01 46" src="https://user-images.githubusercontent.com/73451727/196587577-95b02072-d838-4557-982b-2185e9c34146.png">
+<img width="1528" alt="스크린샷 2022-10-19 오후 12 02 12" src="https://user-images.githubusercontent.com/73451727/196587540-30d17e07-4761-4555-9fd1-478f79afad7f.png">
+<img width="662" alt="스크린샷 2022-10-19 오후 12 02 38" src="https://user-images.githubusercontent.com/73451727/196587484-9b0c06da-ccb1-402f-b5a3-c8360d75c970.png">
+#### 4. 라우팅 테이블 정의
+
+
+## SUBNET
 ## igw, nat gateway 
 ## route table
