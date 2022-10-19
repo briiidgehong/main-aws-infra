@@ -32,13 +32,20 @@
 ## VPC 구성
 <img width="608" alt="스크린샷 2022-10-19 오후 12 22 59" src="https://user-images.githubusercontent.com/73451727/196590258-43930230-619c-4dc9-8b8c-ff1351e85c85.png">
 
+### - 기본구성
+> VPC IGW 연결 <br/>
+> VPC 내의 서브넷 생성 <br/>
+> VPC 내의 라우팅테이블 생성 <br/>
+> 해당 라우팅테이블에 0.0.0.0/0 - igw 등록 + 서브넷 등록 <br/>
+
+
 #### 1. VPC 생성
 - ecs-test-vpc
 <img width="650" alt="스크린샷 2022-10-19 오전 11 58 29" src="https://user-images.githubusercontent.com/73451727/196586925-bb3517cd-8d0a-4115-8bd7-29779ee9bf0e.png">
 
 #### 2. 서브넷 생성 (public / private)
-- ecs-test-public-subnet-01
-- ecs-test-private-subnet-01
+- ecs-test-public-subnet-01 <br/>
+- ecs-test-private-subnet-01 <br/>
 
 <img width="664" alt="스크린샷 2022-10-19 오후 12 00 10" src="https://user-images.githubusercontent.com/73451727/196587227-ce2fa515-2d93-4d1f-adef-0da739430583.png">
 <img width="648" alt="스크린샷 2022-10-19 오후 12 00 49" src="https://user-images.githubusercontent.com/73451727/196587237-80effd2d-b5fa-4e88-a56b-b72a2533300a.png">
@@ -49,13 +56,13 @@
 <img width="662" alt="스크린샷 2022-10-19 오후 12 02 38" src="https://user-images.githubusercontent.com/73451727/196587484-9b0c06da-ccb1-402f-b5a3-c8360d75c970.png">
 
 #### 4. 라우팅 테이블 정의
-- ecs-test-public-route 
-  > 라우팅테이블 생성
-  > 라우팅 편집 -> 추가 0.0.0.0/0 - igw
-  > 서브넷 연결 ecs-test-public-subnet-01
+- ecs-test-public-route
+  > 라우팅테이블 생성 <br/>
+  > 라우팅 편집 -> 추가 0.0.0.0/0 - igw <br/>
+  > 서브넷 연결 ecs-test-public-subnet-01 <br/>
 - ecs-test-private-route
-  > 라우팅테이블 생성
-  > 서브넷 연결 ecs-test-private-subnet-01
+  > 라우팅테이블 생성 <br/>
+  > 서브넷 연결 ecs-test-private-subnet-01 
 
 <br/>
 
