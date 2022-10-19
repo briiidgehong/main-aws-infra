@@ -30,6 +30,8 @@
 <img width="643" alt="스크린샷 2022-10-18 오후 6 48 48" src="https://user-images.githubusercontent.com/73451727/196397418-86647ea3-603e-4451-a27d-614037e11ffa.png">
 
 ## VPC 구성
+<img width="608" alt="스크린샷 2022-10-19 오후 12 22 59" src="https://user-images.githubusercontent.com/73451727/196590258-43930230-619c-4dc9-8b8c-ff1351e85c85.png">
+
 #### 1. VPC 생성
 - ecs-test-vpc
 <img width="650" alt="스크린샷 2022-10-19 오전 11 58 29" src="https://user-images.githubusercontent.com/73451727/196586925-bb3517cd-8d0a-4115-8bd7-29779ee9bf0e.png">
