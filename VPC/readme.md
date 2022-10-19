@@ -70,17 +70,3 @@
 <img width="663" alt="스크린샷 2022-10-19 오후 12 09 41" src="https://user-images.githubusercontent.com/73451727/196588601-c47eb533-d5bb-4962-b1e9-5a8ead5104ae.png">
 <img width="1524" alt="스크린샷 2022-10-19 오후 12 10 03" src="https://user-images.githubusercontent.com/73451727/196588600-9444b533-7d67-4fd1-b024-9554e1ec6d09.png">
 <img width="1746" alt="스크린샷 2022-10-19 오후 12 10 17" src="https://user-images.githubusercontent.com/73451727/196588596-cb183f7f-dc37-4573-b146-88006893eaa8.png">
-
-
-
-
-
-
-
-
-
-
-
-## SUBNET
-## igw, nat gateway 
-## route table
