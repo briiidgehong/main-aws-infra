@@ -1,4 +1,13 @@
-# terraform
+## AWS
+### - [VPC-CIDR](https://github.com/briiidgehong/main-aws-terraform/tree/main/VPC-CIDR)
+### - [EC2](https://github.com/briiidgehong/main-aws-terraform/tree/main/EC2)
+### - [LoadBalancer](https://github.com/briiidgehong/main-aws-terraform/tree/main/LoadBalancer)
+### - [ElasticBeanstalk](https://github.com/briiidgehong/main-aws-terraform/tree/main/ElasticBeanstalk)
+### - [ECS-FARGATE](https://github.com/briiidgehong/main-aws-terraform/tree/main/ECS-FARGATE)
+### - []()
+
+
+## terraform
 iac, terraform
 
 
