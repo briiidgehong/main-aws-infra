@@ -6,6 +6,7 @@
 
 
 ## ALB
+vpc -> alb -> targetgroup -> instance
 <img width="693" alt="스크린샷 2022-10-19 오후 6 35 40" src="https://user-images.githubusercontent.com/73451727/196655044-e0c96eb2-8fc7-4e55-bfc4-fa6566b8f3ca.png">
 
 - scale out방식으로 여러대의 서버를 하나의 도메인으로 사용할수 있게해줌
