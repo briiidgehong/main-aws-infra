@@ -32,6 +32,12 @@
 > rf) https://wooono.tistory.com/m/133 <br/>
 
 ### ECS 구성 - single container
-#### 1. 클러스터 생성
-#### 2. 서비스 생성
-#### 3. 작업정의 생성
+#### 1. ECR 에 image push
+#### 2. 컨테이너 정의
+#### 2. 테스트 정의
+#### 3. 서비스
+#### 5. 클러스터
+#### 테스트
+- 클러스터 -> demo-cluster -> 작업 -> public ip
+<img width="452" alt="스크린샷 2022-10-20 오후 6 12 18" src="https://user-images.githubusercontent.com/73451727/196907626-c1e896f1-2c68-47ab-ac32-6847b0ba12cc.png">
+
