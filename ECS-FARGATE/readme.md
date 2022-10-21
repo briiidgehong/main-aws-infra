@@ -8,7 +8,7 @@
 ### ECS는 컨테이너 배포형식으로 EC2 와 fargate(serverless)를 사용할수 있다.
 > <img width="897" alt="스크린샷 2022-10-18 오전 11 28 51" src="https://user-images.githubusercontent.com/73451727/196321407-78027adf-9637-4bae-b8d7-f00bff5bd86f.png">
 
-### 구성요소 4가지: 컨테이너 / 테스크 / 서비스 / 클러스터
+### 구성요소 : 클러스터/테스크/테스크데피니션/서비스
 #### 클러스터
 ```
 도커 컨테이너를 실행할 수 있는 가상의 공간
@@ -33,6 +33,7 @@
 서비스는 하나의 테스크 데피니션과 연결
 클러스터 내에서 테스크를 스케쥴링하는 역할
 ```
+<img width="452" alt="스크린샷 2022-10-20 오후 6 12 18" src="https://user-images.githubusercontent.com/73451727/196907626-c1e896f1-2c68-47ab-ac32-6847b0ba12cc.png">
 
 > ### 컨테이너(컨테이너 정의) <br/>
 > <img width="659" alt="스크린샷 2022-10-20 오후 5 54 10" src="https://user-images.githubusercontent.com/73451727/196903549-a933116b-b9e7-4ffc-b7d8-65927743b4ca.png">
@@ -64,5 +65,4 @@
 #### 5. 클러스터
 #### 테스트
 - 클러스터 -> demo-cluster -> 작업 -> public ip
-<img width="452" alt="스크린샷 2022-10-20 오후 6 12 18" src="https://user-images.githubusercontent.com/73451727/196907626-c1e896f1-2c68-47ab-ac32-6847b0ba12cc.png">
 
