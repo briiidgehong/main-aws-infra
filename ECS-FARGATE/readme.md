@@ -33,7 +33,13 @@
 서비스는 하나의 테스크 데피니션과 연결
 클러스터 내에서 테스크를 스케쥴링하는 역할
 ```
-<img width="452" alt="스크린샷 2022-10-20 오후 6 12 18" src="https://user-images.githubusercontent.com/73451727/196907626-c1e896f1-2c68-47ab-ac32-6847b0ba12cc.png">
+<img width="634" alt="스크린샷 2022-10-18 오전 11 48 53" src="https://user-images.githubusercontent.com/73451727/196324192-2195c861-cba9-4cb6-976d-e795c4141674.png">
+
+
+
+### ECS 구성 - single container
+> ### ECR 에 image push <br/>
+
 
 > ### 컨테이너(컨테이너 정의) <br/>
 > <img width="659" alt="스크린샷 2022-10-20 오후 5 54 10" src="https://user-images.githubusercontent.com/73451727/196903549-a933116b-b9e7-4ffc-b7d8-65927743b4ca.png">
@@ -48,21 +54,17 @@
 ><img width="661" alt="스크린샷 2022-10-20 오후 5 57 13" src="https://user-images.githubusercontent.com/73451727/196904211-3aac5cb3-59e3-46b1-9a4e-fa22146d95b9.png">
 ><img width="587" alt="스크린샷 2022-10-20 오후 5 57 28" src="https://user-images.githubusercontent.com/73451727/196904220-bca52c10-8253-4d2d-922f-b8a3076825d0.png">
 
+
 > ### 클러스터 <br/>
 ><img width="642" alt="스크린샷 2022-10-20 오후 6 00 23" src="https://user-images.githubusercontent.com/73451727/196904817-cdf46dec-c939-48db-9667-99f5c7c30910.png">
 
 
+> ### 테스트 <br/>
+> 클러스터 -> demo-cluster -> 작업 -> public ip <br/>
+> <img width="452" alt="스크린샷 2022-10-20 오후 6 12 18" src="https://user-images.githubusercontent.com/73451727/196907626-c1e896f1-2c68-47ab-ac32-6847b0ba12cc.png">
 
-<img width="634" alt="스크린샷 2022-10-18 오전 11 48 53" src="https://user-images.githubusercontent.com/73451727/196324192-2195c861-cba9-4cb6-976d-e795c4141674.png">
 
 > rf) https://wooono.tistory.com/m/133 <br/>
+> rf) https://www.44bits.io/ko/post/container-orchestration-101-with-docker-and-aws-elastic-container-service <br/>
 
-### ECS 구성 - single container
-#### 1. ECR 에 image push
-#### 2. 컨테이너 정의
-#### 2. 테스트 정의
-#### 3. 서비스
-#### 5. 클러스터
-#### 테스트
-- 클러스터 -> demo-cluster -> 작업 -> public ip
 
