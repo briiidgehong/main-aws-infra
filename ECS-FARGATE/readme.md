@@ -68,3 +68,11 @@
 > rf) https://www.44bits.io/ko/post/container-orchestration-101-with-docker-and-aws-elastic-container-service <br/>
 
 
+### ECS 구성 2
+> ### - 클러스터 생성
+> ### - 클러스터에 컨테이너 인스턴스 추가
+> ### - ECR nginx 이미지 업데이트
+> ### - 테스크 데피니션 생성
+> ### - 서비스 생성 - nginx 서비스 실행
+> ### - 
+
