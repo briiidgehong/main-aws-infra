@@ -99,5 +99,10 @@ RUN echo '<!DOCTYPE html><html lang="ko">' > /var/www/html/index.php ;\
 <img width="703" alt="스크린샷 2022-10-24 오후 2 14 16" src="https://user-images.githubusercontent.com/73451727/197452992-a2f2fccd-05fb-4086-8eba-1c163de103dc.png">
 <img width="711" alt="스크린샷 2022-10-24 오후 2 11 44" src="https://user-images.githubusercontent.com/73451727/197452860-c9a7e8ff-3271-42ed-8137-a07bb2f9960e.png">
 
+> ### - 수동 배포: 서비스 업데이트 > 새 배포 적용 check > update
+<img width="1355" alt="스크린샷 2022-10-25 오후 8 56 46" src="https://user-images.githubusercontent.com/73451727/197767526-be014915-1029-4389-858e-8e3a06ea7b61.png">
+<img width="1588" alt="스크린샷 2022-10-25 오후 8 57 15" src="https://user-images.githubusercontent.com/73451727/197767569-90f1e246-be40-4cc7-bc83-47e66835deb9.png">
+<img width="632" alt="스크린샷 2022-10-25 오후 8 57 33" src="https://user-images.githubusercontent.com/73451727/197767584-316823a8-63d4-4577-b00f-9e43573cf1da.png">
+<img width="222" alt="스크린샷 2022-10-25 오후 8 57 45" src="https://user-images.githubusercontent.com/73451727/197767606-89e691e3-ec02-4b5f-817a-67e3fb12f1ca.png">
 
 
