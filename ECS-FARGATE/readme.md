@@ -37,7 +37,7 @@
 
 
 
-### ECS 구성 - single container
+### ECS 구성 - 빠른 시작
 > ### ECR 에 image push <br/>
 
 
