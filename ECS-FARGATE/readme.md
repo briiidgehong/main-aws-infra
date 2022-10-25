@@ -105,4 +105,9 @@ RUN echo '<!DOCTYPE html><html lang="ko">' > /var/www/html/index.php ;\
 <img width="632" alt="스크린샷 2022-10-25 오후 8 57 33" src="https://user-images.githubusercontent.com/73451727/197767584-316823a8-63d4-4577-b00f-9e43573cf1da.png">
 <img width="222" alt="스크린샷 2022-10-25 오후 8 57 45" src="https://user-images.githubusercontent.com/73451727/197767606-89e691e3-ec02-4b5f-817a-67e3fb12f1ca.png">
 
-
+## ECS 배포
+- docker-compose 는 로컬환경에서 사용하기 좋지만, production 환경에서 사용하기는 부적합함 <br/>
+- docker-compose의 장점인, 여러개 컨테이너를 묶는 도커 네트워크 또한 사용하기 어려워짐 <br/>
+- 그러나, aws ecs의 경우 동일한 테스크에 컨테이너를 추가하면 하나의 호스트 머신에 같이 올라감 <br/>
+- 도커 네트워크 구성은 x / 단지 localhost를 사용할 수 있게 해줌 / mongodb:27017 -> localhost:27017 로 변경 <br/>
+- 도커화된 앱을 배포할 때는, 도커 네트워크를 사용할 수 없음(즉, 컨테이너 이름 자체로 다른 컨테이너에 접근하는것이 불가능해짐) <br/>
