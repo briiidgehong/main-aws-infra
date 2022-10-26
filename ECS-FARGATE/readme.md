@@ -41,10 +41,48 @@
 > rf) https://www.44bits.io/ko/post/container-orchestration-101-with-docker-and-aws-elastic-container-service <br/>
 
 ### - 1. ECR 이미지 업로드 
+```
+- public repository / port 80:80
+```
 ### - 2. 클러스터 생성
+```
+- 네트워킹 전용
+```
 ### - 3. 테스트 데피니션 생성
+```
+- 컨테이너 추가 (이미지URL/포트맵핑)
+- 작업크기 설정 (CPU/MEMORY)
+```
 ### - 4. 서비스 생성 = 테스크 데피니션 맵핑 및 서비스 실행
+```
+- 시작유형: FARGATE
+- 위에서 만든 작업정의 선택
+- 작업갯수 설정
+- 배포방식 설정
+- VPC 선택
+- 보안그룹 설정
+
+- 로드밸런서 생성
+    - ALB 선택
+    - VPC 선택
+    - 보안그룹 생성
+    - 타겟그룹 생성 - type: ip addresses
+        - health check 설정
+        - 타겟그룹에 해당하는 인스턴스 추가는 안해도됨 
+        - ECS에서 서비스 실행시 자동 등록
+
+- 로드밸런서 설정
+    - 로드밸런서 선택후, 리스너포트/타겟그룹 추가
+- auto scaling 설정
+    - 최소/최대 작업 갯수
+    - 정책 설정 (대상 추적 방식 / CPU Utilization > 70)
+
+```
 ### - 5. 결과 및 테스트
+```
+- task public ip test
+- ALB DNS test
+```
 ### - 6. 수동 배포: 서비스 업데이트 > 새배포적용 check > 업데이트
 <br/>
 
