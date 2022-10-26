@@ -105,7 +105,80 @@ RUN echo '<!DOCTYPE html><html lang="ko">' > /var/www/html/index.php ;\
 <img width="632" alt="스크린샷 2022-10-25 오후 8 57 33" src="https://user-images.githubusercontent.com/73451727/197767584-316823a8-63d4-4577-b00f-9e43573cf1da.png">
 <img width="222" alt="스크린샷 2022-10-25 오후 8 57 45" src="https://user-images.githubusercontent.com/73451727/197767606-89e691e3-ec02-4b5f-817a-67e3fb12f1ca.png">
 
-## ALB 추가하기
+## ECS 구성 - ALB / auto scailing 적용
+### - 1. ECR 이미지 업로드
+### - 2. 클러스터 생성
+### - 3. 테스트 데피니션 생성
+### - 4. 서비스 생성 = 테스크 데피니션 맵핑 및 서비스 실행
+### - 5. 결과 및 테스트
+### - 6. 수동 배포: 서비스 업데이트 > 새배포적용 check > 업데이트
+<br/>
+
+> ### - 1. ECR 이미지 업로드 <br/>
+```
+# create dockerfile
+mkdir dockerized-fast-api
+sudo vi Dockerfile / main.py / requirements.txt
+
+- dockerfile
+FROM python:3.7
+USER root
+WORKDIR /app/
+COPY ./requirements.txt /app/requirements.txt
+RUN pip install -r /app/requirements.txt 
+COPY . /app/
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+
+- main.py
+from fastapi import FastAPI
+app = FastAPI()
+@app.get("/")
+async def root():
+    return {"message": "hello world dockerized fast api !!"}
+    
+- requirements.txt
+anyio==3.6.1
+click==8.1.3
+fastapi==0.85.0
+h11==0.14.0
+httptools==0.5.0
+idna==3.4
+importlib-metadata==5.0.0
+pydantic==1.10.2
+python-dotenv==0.21.0
+PyYAML==6.0
+sniffio==1.3.0
+starlette==0.20.4
+typing_extensions==4.4.0
+uvicorn==0.18.3
+uvloop==0.17.0
+watchfiles==0.17.0
+websockets==10.3
+zipp==3.9.0
+
+
+Docker build —t “dockerized-fast-api-image” .
+sudo docker build -t dockerized-fast-api-image .
+```
+> public repository / port 80:80 <br/>
+<img width="881" alt="스크린샷 2022-10-21 오후 5 04 22" src="https://user-images.githubusercontent.com/73451727/197145411-c3b21bf8-67e3-4c54-b288-223b7fce34c2.png">
+<img width="616" alt="스크린샷 2022-10-21 오후 5 04 06" src="https://user-images.githubusercontent.com/73451727/197145434-53dfbb43-a777-44ce-9731-ed485d85e72c.png">
+<br/>
+
+> ### - 2. 클러스터 생성
+<br/>
+
+> ### - 3. 테스트 데피니션 생성
+<br/>
+
+> ### - 4. 서비스 생성 = 테스크 데피니션 맵핑 및 서비스 실행
+<br/>
+
+> ### - 5. 결과 및 테스트
+<br/>
+
+> ### - 6. 수동 배포: 서비스 업데이트 > 새배포적용 check > 업데이트
+<br/>
 
 
 ## ECS 배포 추가사항
