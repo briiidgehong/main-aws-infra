@@ -113,3 +113,5 @@ RUN echo '<!DOCTYPE html><html lang="ko">' > /var/www/html/index.php ;\
 - 로컬환경 에서의 변수와 실제 배포시의 변수가 mongodb vs localhost로 갈리므로, ecr container 추가시에 variables를 추가로 설정한다 <br/>
 - MONGODB_URL = localhost <br/>
 - 도커화된 앱을 배포할 때는, 도커 네트워크를 사용할 수 없음(즉, 컨테이너 이름 자체로 다른 컨테이너에 접근하는것이 불가능해짐) <br/>
+<br/>
+- local에서처럼 db 볼륨을 이용하는 방법 -> EFS (elastic file system) <br/>
