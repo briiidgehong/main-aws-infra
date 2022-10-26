@@ -118,3 +118,6 @@ RUN echo '<!DOCTYPE html><html lang="ko">' > /var/www/html/index.php ;\
 
 - local에서처럼 db 볼륨을 이용하는 방법 -> EFS (elastic file system) <br/>
 - 보안그룹설정 및 container edit -> storage 설정 필요 <br/>
+- 롤링 배포시, 현재 컨테이너와 배포하려는 컨테이너가 동시에 EFS 접근하여 충돌함 - RDS와 같은 관리형 DB를 쓰자. <br/>
+<br/>
+
