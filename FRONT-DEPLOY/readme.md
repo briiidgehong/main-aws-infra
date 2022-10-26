@@ -17,8 +17,8 @@ phases:
         if [ $CODEBUILD_BUILD_SUCCEEDING -eq 0 ]; then
           return -1
         fi
-      - aws s3 rm --recursive s3://rectest.haezoom.com/
-      - aws s3 sync dist s3://rectest.haezoom.com/ 
+      - aws s3 rm --recursive s3://rectest.coperation_name.com/
+      - aws s3 sync dist s3://rectest.coperation_name.com/ 
       - aws cloudfront create-invalidation --distribution-id ECW2Z33NKU12T  --paths "/*"
 
 ```
