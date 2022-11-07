@@ -4,7 +4,7 @@
 ### - [LoadBalancer](https://github.com/briiidgehong/main-aws-terraform/tree/main/LoadBalancer)
 ### - [ElasticBeanstalk](https://github.com/briiidgehong/main-aws-terraform/tree/main/ElasticBeanstalk)
 ### - [ECS-FARGATE](https://github.com/briiidgehong/main-aws-terraform/tree/main/ECS-FARGATE)
-### - []()
+### - [LAMBDA + API GATEWAY](https://labs.brandi.co.kr/2018/07/31/kwakjs.html)
 
 
 ## terraform
